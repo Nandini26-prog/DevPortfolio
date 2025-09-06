@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Personal Portfolio Website
 
 A modern, dark-themed portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. This portfolio is designed for software developers and features a clean, professional layout with smooth animations and responsive design.
@@ -127,3 +128,6 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Support
 
 If you have any questions or need help customizing the portfolio, feel free to open an issue or reach out!
+=======
+# DevPortfolio
+>>>>>>> 1f1c0a2fb7873b8b6c84a4b4d63850935a1bfa88
