@@ -16,9 +16,13 @@ module.exports = {
         'accent-green': '#00FF88',
         'accent-red': '#FF4444',
       },
+       fontFamily: {
+        signature: ['Parisienne', 'cursive'], // Add this line
+      },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
+     
     },
   },
   plugins: [],

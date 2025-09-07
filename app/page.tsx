@@ -5,11 +5,13 @@ import { Sun, Moon, MapPin, Globe, Clock, Play, Pause, SkipBack, SkipForward, Pl
 import { projects, expertises, roles, testimonials, blogs, experience, skills, sparks } from '@/lib/data';
 import ProjectCard from '@/components/ProjectCard';
 import ExpertiseCard from '@/components/ExpertiseCard';
-import TestimonialCard from '@/components/TestimonialCard';
+//import TestimonialCard from '@/components/TestimonialCard';
 import BlogCard from '@/components/BlogCard';
 import BlogMoodboard from '@/components/BlogMoodboard';
 import RandomSparkPopup from '@/components/RandomSparkPopup';
 import PersonalityBadges from '@/components/PersonalityBadges';
+import HorizontalTimeline from '@/components/HorizontalTimeline';
+import { timeline } from '@/lib/timeline';
 
 
 export default function Home() {
@@ -98,18 +100,19 @@ export default function Home() {
               <h2 className="text-2xl text-muted-text mb-6">Software developer</h2>
               <p className="text-lg leading-relaxed text-muted-text">
               Namaste! 🛠️ Wild ideas → working products.  
-From full-stack apps to hackathon prototypes, I enjoy building things that actually make sense (and sometimes, just for fun).  
-<br></br>Still learning. Still shipping. Always curious.
-</p>
-               <br></br>  <p className="text-sm text-muted-text">
+              From full-stack apps to hackathon prototypes, I enjoy building things that actually make sense (and sometimes, just for fun).  
+              <br></br>Still learning. Still shipping. Always curious.
+              </p>
+              <br></br>  <p className="text-sm text-muted-text">
               Btech CSE • 2022–2026 • 9.02/10
             </p>
             </div>
 <div className="ml-12 relative">
   <div className="w-32 h-32 bg-dark-card rounded-full flex items-center justify-center border-2 border-dark-border overflow-hidden">
     <img
-      src="/DSC_4080.JPG"   // <-- put your initials image here
-      alt="Nandini Jain logo"
+      src="/stylecrop.jpg"   // <-- put your initials image here
+     //src="/VRimagecrop.jpg" 
+     alt="Nandini Jain logo"
       className="w-full h-full object-cover"
     />
   </div>
@@ -121,10 +124,10 @@ From full-stack apps to hackathon prototypes, I enjoy building things that actua
 
         {/* Quote Section */}
         <section className="max-w-4xl mx-auto px-6 py-16 text-center">
-          <div className="text-6xl text-light-text mb-8">"</div>
+          {/* <div className="text-6xl text-light-text mb-8"></div> */}
           <blockquote className="text-xl text-muted-text leading-relaxed max-w-3xl mx-auto">
           "Mostly experimenting, occasionally succeeding, always learning."
-  </blockquote>
+          </blockquote>
 
         </section>
 
@@ -167,7 +170,7 @@ From full-stack apps to hackathon prototypes, I enjoy building things that actua
             {roles.map((role, index) => (
               <div key={index} className="bg-dark-card rounded-lg p-6 border border-dark-border card-hover">
                 <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-xl font-semibold">{role.title}</h3>
+                  <h3 className="text-xl font-semibold">{role.title} | {role.company}</h3>
                   <span className={`px-3 py-1 rounded-full text-xs font-medium ${
                     role.status.toLowerCase().includes('open') 
                       ? 'bg-green-900/20 text-accent-green border border-accent-green' 
@@ -184,7 +187,8 @@ From full-stack apps to hackathon prototypes, I enjoy building things that actua
 
         {/* Client Feedback Section */}
         <section className="max-w-6xl mx-auto px-6 py-16">
-          <div className="mb-8">
+          <HorizontalTimeline milestones={timeline} />
+          {/* <div className="mb-8">
             <span className="inline-block px-4 py-2 bg-dark-card border border-light-text rounded-full text-sm font-medium">
               CLIENT FEEDBACK
             </span>
@@ -193,7 +197,7 @@ From full-stack apps to hackathon prototypes, I enjoy building things that actua
             {testimonials.map((testimonial, index) => (
               <TestimonialCard key={index} testimonial={testimonial} />
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* Blog Moodboard Section */}
@@ -245,8 +249,10 @@ From full-stack apps to hackathon prototypes, I enjoy building things that actua
         <div className="max-w-6xl mx-auto px-6 text-center">
           <div className="mb-4">
             <div className="mb-6">
-              <div className="text-5xl font-signature text-center mb-4">Nandini Jain</div>
-              <PersonalityBadges />
+               <div className="text-5xl font-signature text-center mb-4">
+                Nandini Jain
+              </div>
+              {/* <PersonalityBadges /> */}
             </div>
             <p className="text-muted-text">
               Copyright © 2025 — Made under dark room with bright eyes

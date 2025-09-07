@@ -138,13 +138,6 @@ export const roles: Role[] = [
       "Integrated medical APIs (Amazon Comprehend Medical) to extract structured clinical insights. Curated 20+ medical datasets to train predictive AI models with 85% accuracy in symptom-to-disease mapping. Explored healthcare AI strategy by combining data engineering, ML, and domain knowledge."
   },
   {
-    company: "Coding Samurai",
-    title: "Web Development Intern",
-    status: "May 2024 – Jun 2024",
-    copy: 
-      "Developed 3 responsive web apps (Calculator, To-Do List, Blogging) using the MERN stack.,Focused on delivering clean UX, responsive design, and reusable components.,Gained experience shipping quick iterations in a professional remote setup."
-  },
-  {
     company: "Coding Ninjas",
     title: "Teaching Assistant (DSA in Java)",
     status: "Oct 2023 – Nov 2023",
