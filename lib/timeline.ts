@@ -57,7 +57,7 @@ export const timeline = [
   {
     id: 't10',
     title: 'Software Intern — Siemens EDA',
-    subtitle: 'C++ dev, visualization tools, industry exposure',
-    period: 'Sept 2025 – Dec 2025 (ongoing)',
+    subtitle: 'Full stack, visualization tools, industry exposure',
+    period: 'July 2025 – Dec 2025 (ongoing)',
   },
 ];

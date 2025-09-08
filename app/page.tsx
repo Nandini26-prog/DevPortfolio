@@ -8,11 +8,11 @@ import ExpertiseCard from '@/components/ExpertiseCard';
 //import TestimonialCard from '@/components/TestimonialCard';
 import BlogCard from '@/components/BlogCard';
 import BlogMoodboard from '@/components/BlogMoodboard';
-import RandomSparkPopup from '@/components/RandomSparkPopup';
+//import RandomSparkPopup from '@/components/RandomSparkPopup';
 import PersonalityBadges from '@/components/PersonalityBadges';
 import HorizontalTimeline from '@/components/HorizontalTimeline';
 import { timeline } from '@/lib/timeline';
-
+//import {skills} from '@/lib/data';
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -69,7 +69,7 @@ export default function Home() {
                       <div className="flex items-center space-x-6 text-sm text-muted-text">
             <div className="flex items-center space-x-1">
               <MapPin className="w-4 h-4" />
-              <span>DELHI, INDIA</span>
+              <span>NOIDA, INDIA</span>
             </div>
             <div className="flex items-center space-x-1">
                   {/* Resume Button */}
@@ -110,9 +110,9 @@ export default function Home() {
 <div className="ml-12 relative">
   <div className="w-32 h-32 bg-dark-card rounded-full flex items-center justify-center border-2 border-dark-border overflow-hidden">
     <img
-      src="/stylecrop.jpg"   // <-- put your initials image here
-     //src="/VRimagecrop.jpg" 
-     alt="Nandini Jain logo"
+      //src="/stylecrop.jpg"   // <-- put your initials image here
+      src="/VRimagecrop.jpg" 
+      alt="Nandini Jain logo"
       className="w-full h-full object-cover"
     />
   </div>
@@ -248,12 +248,10 @@ export default function Home() {
       <footer className="border-t border-dark-border py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <div className="mb-4">
-            <div className="mb-6">
-               <div className="text-5xl font-signature text-center mb-4">
+            {/* <div className=" text-sm font-signature text-center mb-4">
                 Nandini Jain
-              </div>
-              {/* <PersonalityBadges /> */}
-            </div>
+              </div> */}
+                     
             <p className="text-muted-text">
               Copyright © 2025 — Made under dark room with bright eyes
             </p>
@@ -262,9 +260,8 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Random Spark Popup */}
-      <RandomSparkPopup sparks={sparks} />
-
+      {/* Random Spark Popup
+      <RandomSparkPopup sparks={sparks} /> */}
     </div>
   );
 }

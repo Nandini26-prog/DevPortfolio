@@ -128,7 +128,7 @@ export const roles: Role[] = [
     title: "Software Intern",
     status: "Jul 2025 – Dec 2025 (expected)",
     copy: 
-      "Contributing to C++-based product development in EDA tooling.Enhancing core CS skills by working on compiler-level systems and visualization features.Gaining hands-on experience in large-scale, high-performance systems software."
+      "Contributing to product development in EDA tooling.Enhancing core CS skills by working on compiler-level systems and visualization features.Gaining hands-on experience in large-scale, high-performance systems software."
   },
   {
     company: "Shivarnim Pvt. Ltd. (Startup)",
@@ -199,6 +199,7 @@ export const blogs: Blog[] = [
 ];
 
 export const sparks = [
+  
   "Sometimes I debug by explaining my code to my rubber duck. It's surprisingly effective! 🦆",
   "I believe every bug is just a feature waiting to be discovered. 🐛✨",
   "Coffee is my debugging fuel, but chai is my creative muse. ☕",
